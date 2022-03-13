@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{ border:10px solid #d5feff;
+            width:40%;
+        }
+        .table th, .table td{
+            border:1px solid white;
+            
+        }
+        .table thead{
+            text-align:center;
+            background-color:red;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form action="baitap.php">
+        <table class="table" cellspacing="1" cellpadding="0">
+            <thead>
+                <tr>
+                    <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+                  <!--  <th></th>
+                    <th></th>
+                    <th></th> -->
+                </tr>
+            </thead>
+                <tr>
+                    <td style="color:blue; text-align:right; cellpadding:1px" width="60px">Họ và tên</td>
+                    <td colspan="3" width="30px">
+                        <input type="text" name="name" size="25px">
+                    </td>
+                 <!--<td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td style="color:blue; text-align:right;">Email</td>
+                    <td colspan="3">
+                        <input type="email" name="email" size="16px">
+                    </td>
+                 <!--   <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td style="color:blue; text-align:right;">Sở thích</td>
+                    <td style="color:red" width="55px">
+                      <input type="checkbox" name="interest" value="Thể thao">Thể thao 
+                    <td style="color:red" width="55px">
+                      <input type="checkbox" name="interest" value="Âm nhạc">Âm nhạc 
+                    </td>    
+                    <td style="color:red" width="90px">
+                    <input type="checkbox" name="interest" value="Đọc sách">Đọc sách 
+                    </td>
+                  <!--  <td></td> -->
+                </tr>
+
+                <tr>   
+                    <td></td>
+                    <td style="color:red">
+                      <input type="checkbox" name="interest" value="Lướt web">Lướt web 
+                    </td>
+                    <td style="color:red">
+                    <input type="checkbox" name="interest" value="Chơi game">Chơi game 
+                    </td>
+                    <td style="color:red">
+                    <input type="checkbox" name="interest" value="Điện ảnh">Điện ảnh
+                    </td>
+                 <!--  <td></td> -->
+                </tr>    
+                <tr>   
+                <tr>
+                    <td></td>
+                    <td style="color:red">
+                    <input type="checkbox" name="interest" value="Du lịch">Du lịch
+                    <td></td>
+                    <td></td>
+                <tr>   
+                   <td></td>
+                    <td colspan="3"> 
+                        <input type="submit" name="submit" value="Gửi thông tin">
+                        <input type="reset" name="reset" value="Nhập lại">
+                    </td>
+                <!--  <td></td>
+                   <td></td> -->
+                </tr>
+        </table>
+    </form>
+</body>
+</html>
